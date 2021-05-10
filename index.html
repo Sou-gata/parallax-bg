@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Parallax - Sougata</title>
+    </head>
+    <body>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            body {
+                background: #616161;
+            }
+            #container {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            canvas {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <div id="container">
+            <img src="./layer-6.png" width="0" alt="" />
+            <canvas id="canvas1"></canvas>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
